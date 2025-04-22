@@ -1,0 +1,242 @@
+/* Universal */
+
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Garamond", serif;
+}
+
+:root {
+    --main-color: #00072d;
+    --secondary-color: #2a3784;
+    --tertiary-color: #016487;
+    --text-color: #D1D0D1;
+}
+
+html {
+    font-size: 100%;
+    color: var(--text-color);
+}
+
+/* Body */
+
+body {
+    margin-left: 64px;
+    margin-right: 64px;
+    background-color: var(--main-color);
+    background-image: linear-gradient(#D1D0D1, #016487, #00072d);
+    background-attachment: fixed;
+}
+
+h2, h3, h4, h5 {
+    padding-bottom: 8px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 48px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 18px;
+    text-align: end;
+}
+
+p {
+    font-size: 18px;
+    text-indent: 32px;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-size: 16px;
+    text-align: center;
+    font-style: italic;
+}
+
+ol {
+    font-size: 18px;    
+    margin-left: 16px;
+    color: lightskyblue;
+}
+
+ul {
+    font-size: 18px;
+    margin-left: 16px;
+    color: rgb(255, 210, 227);
+}
+
+strong {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+span {
+    font-weight: bold;
+    color: white;
+}
+
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    max-height: 512px;
+    max-width: 768px;
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.wrapper {
+    padding: 10px 10px 10px 10px;
+    width: 960px;
+    margin: auto;
+}
+
+header, .navbar, .content, footer{
+    margin-bottom: 10px;
+}
+
+header {
+    height: 320px;
+    align-content: center;
+    text-align: center;
+}
+
+/* Navigation */
+
+.navbar {
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background: var(--secondary-color);
+}
+
+.navbar a {
+    margin: 0 15px; /* Adjust spacing between a elements */
+    color: var(--text-color);
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar a:visited { /* When a link has been visited */
+    text-decoration: none;
+}
+
+.navbar a:hover {   /* While the mouse is hovering over */
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.navbar a:active {  /* The moment it is clicked */
+    color: blue;
+}
+
+.navbar a.active-nav {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.bx-sun {
+    color: #fff;
+}
+
+.bx-moon {
+    color: #fff;
+}
+
+.bx-sun:hover {
+    cursor: default;
+}
+
+.bx-moon:hover {
+    cursor: default;
+}
+
+/* Content */
+
+.content {
+    background-color: var(--tertiary-color);
+    padding: 8px 64px 8px 64px;
+    box-shadow: 0px 0px 20px 1px var(--main-color); /*The first value is the horizontal offset and the second value is the vertical offset the third is the blur and the fourht is the spread */
+}
+
+.content a {
+    color: var(--text-color);
+    background-color: blue;
+    border: solid 2px blue;
+    text-decoration: none;
+}
+
+.content a:visited {
+    color: var(--text-color);
+    background-color: purple;
+    border: solid 2px purple;
+    text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+    padding: 24px 10px 24px 10px;
+    align-content: center;
+    text-align: center;
+    background-color: var(--secondary-color);
+}
+
+.page-control {
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+}
+
+footer a {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer a:hover {
+    background-color: var(--tertiary-color);
+}
+
+footer p {
+    text-indent: 0px;
+}
+
+footer .social i {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 24px;
+    border-color: var(--text-color);
+    color: var(--text-color);
+}
+
+footer .social i:hover {
+    background-color: var(--tertiary-color);
+}
